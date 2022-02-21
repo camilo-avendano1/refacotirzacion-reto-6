@@ -1,0 +1,27 @@
+			Refactorización reto 6 (Jhon Jader Caro y Juan Camilo Avendaño)
+
+1) En la clase "Articulo" se modifico la inicialización de los atributos, solo se inicializan los atributos cuando es necesario, 
+es decir cuando se invoca el constructor.
+
+2) En la clase "Utileria" la cual se usa unicamente para ingresar datos con la función Scanner, se cambio los métodos a métodos 
+estaticos ya que no era necesario invocar un objeto de tipo utileria ya que era un clase con solo metodos.
+
+3) En la clase "Banco" se elimino el objeto "Utileria" ya que no era necesario por que se cambio sus metodos a estaticos. 
+
+4) En la clase "Banco" se cambia la accesibilidad del atributo "clientes" de tipo HashTable de public a private y se crean sus respectivos Getters y setters.
+
+5) En el "Main" se eliminan los objetos de tipo "utileria" ya que no son necesarios y se agrega en el catch de cada error el nombre del error que arroja el
+programa cuando algún error se produce.
+
+6) En la clase "Cliente" se se modifico la inicialización de los atributos (pais,nombre,contacto,cedula,articulos), solo se inicializan los atributos cuando 
+es necesario, es decir solo cuando se invoca algún constructor.
+
+7) En la clase "Cliente" se cambio la accesibilidad de "articulos" de tipo ArrayList de public a private y se creo sus respectivos Getters y setters.
+
+8) En la clase "Cliente" se eliminaron los objetos de la clase "Utileria" y solo se invocaron los metodos estaticos de esta clase.
+
+9) En la clase del "Main" al modificarse la accesibilidad de "articulos" del cliente, se tuvo que dejar de invocar directamente a articulos y empezar a 
+invocar a getArticulos()
+
+10) Gramaticamente estaba bien. Cada metodo tenia una sola función asignada. No se uso copy and paste para ningún método, tampoco se hallaron métodos similares o
+repetidos, se comentaron algunas cosas que faltaban por comentarse, las variables y metodos tienen nombres relacionados con su proposito en el programa.
